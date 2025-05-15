@@ -1,6 +1,6 @@
 # EmoTalk_v0002: Enhanced Speech-Driven Emotional 3D Face Animation
 
-> ⚠️ This project is based on the original **EmoTalk** (ICCV 2023) by Ziqiao Peng et al. Please refer to the [original repository](https://github.com/psyai-net/EmoTalk_release) for baseline implementation and citation. This fork introduces architectural enhancements and fine-tuning pipelines to improve emotional expressiveness, motion precision, and controllability.
+> ⚠ This project is based on the original **EmoTalk** (ICCV 2023) by Ziqiao Peng et al. Please refer to the [original repository](https://github.com/psyai-net/EmoTalk_release) for baseline implementation and citation. This fork introduces architectural enhancements and fine-tuning pipelines to improve emotional expressiveness, motion precision, and controllability.
 
 ## ✨ What's New in EmoTalk_v0002?
 
