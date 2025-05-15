@@ -1,0 +1,24 @@
+import bpy
+import csv
+
+# 获取当前激活对象
+obj = bpy.context.active_object
+
+# 检查对象是否有 shape key
+if obj.data.shape_keys:
+    # 设置 CSV 文件路径（这里保存到与 .blend 文件同一目录下）
+    filepath = bpy.path.abspath("//shape_keys_data.csv")
+    
+    with open(filepath, 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        # 写入表头：包括 shape key 名称、顶点索引及其坐标
+        writer.writerow(["shape_key_name", "vertex_index", "x", "y", "z"])
+        
+        # 遍历所有 shape key（包括 Basis 和其他目标）
+        for key_block in obj.data.shape_keys.key_blocks:
+            for i, vertex in enumerate(key_block.data):
+                writer.writerow([key_block.name, i, vertex.co.x, vertex.co.y, vertex.co.z])
+    
+    print("Shape key 信息已导出到:", filepath)
+else:
+    print("当前对象没有 shape key 信息")
