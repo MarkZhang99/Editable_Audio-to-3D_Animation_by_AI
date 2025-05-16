@@ -72,11 +72,12 @@ The dataset preprocessing scripts are:
 
 ## Acknowledgements
 
-This project builds upon the excellent work of the original EmoTalk authors. We sincerely thank them for releasing their code and dataset.
+This project builds upon the excellent work of the original [EmoTalk](https://github.com/psyai-net/EmoTalk_release) authors. We sincerely thank them for releasing their code and dataset, which made this extension possible.
 
 Credits and dependencies include:
 
-* EmoTalk (ICCV 2023) – Base model and design.
-* 3DETF dataset – Includes RAVDESS and HDTF data.
-* Wav2Vec2 pretrained models – For speech representation extraction.
-* FLAME model & Blender integration – For mesh reconstruction and visualization.
+- **EmoTalk** (ICCV 2023) – Base model architecture and training pipeline.
+- **3DETF Dataset** – Includes RAVDESS and HDTF subsets for audiovisual facial animation.
+- **Wav2Vec2** – Pretrained models for speech representation extraction.
+- **FLAME Model & Blender Integration** – Used for 3D mesh reconstruction and animation visualization.
+
