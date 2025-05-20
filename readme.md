@@ -42,6 +42,7 @@ mv blender-3.4.1-linux-x64 blender
 demo video on YouTube:
 
 [![Watch the demo](https://img.youtube.com/vi/mca-1Ngnmgg/0.jpg)](https://youtu.be/mca-1Ngnmgg)
+
 Download the pretrained checkpoint (trained on RAVDESS):
 
 `emotalk_finetuned.pth`
